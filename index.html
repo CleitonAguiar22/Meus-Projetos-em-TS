@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Mini Projetos Como Desenvolvedor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            padding: 15px;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .project-slot {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            background-color: #fff;
+            border: 2px solid #007bff;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #007bff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            font-weight: bold;
+        }
+
+        .project-slot::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(0, 123, 255, 0.2);
+            transition: all 0.4s ease;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            z-index: 0;
+        }
+
+        .project-slot:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .project-slot:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-10px) scale(1.05);
+            background-color: #e9ecef;
+            color: #0056b3;
+        }
+
+        .project-slot:active {
+            transform: scale(0.95) translateY(0);
+            background-color: #d6d6d6;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-slot p {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+        }
+
+        .back-button {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .back-button:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .project-slot {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-slot {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Meus Mini Projetos Como Desenvolvedor</h1>
+    </div>
+
+    <div class="container">
+        <div class="project-slot" onclick="location.href='imc.html'"><p>Calculadora IMC</p></div>
+        <div class="project-slot" onclick="location.href='temp.html'"><p>Calculadora Temperatura</p></div>
+        <div class="project-slot" onclick="window.location.href='concat_str.html'"><p>Concatenador de Strings</p></div>
+        <div class="project-slot" onclick="window.location.href='calcularAouP.html'"><p>Calculadora de Área ou Perímetro</p></div>
+        <div class="project-slot" onclick="window.location.href='verific_Divisibilidade.html'"><p>Verificador de Divisibilidade</p></div>
+        <div class="project-slot"><p>Projeto 6</p></div>
+        <div class="project-slot"><p>Projeto 7</p></div>
+        <div class="project-slot"><p>Projeto 8</p></div>
+        <div class="project-slot"><p>Projeto 9</p></div>
+        <div class="project-slot"><p>Projeto 10</p></div>
+        <div class="project-slot"><p>Projeto 11</p></div>
+        <div class="project-slot"><p>Projeto 12</p></div>
+        <div class="project-slot"><p>Projeto 13</p></div>
+        <div class="project-slot"><p>Projeto 14</p></div>
+        <div class="project-slot"><p>Projeto 15</p></div>
+        <div class="project-slot"><p>Projeto 16</p></div>
+        <div class="project-slot"><p>Projeto 17</p></div>
+        <div class="project-slot"><p>Projeto 18</p></div>
+        <div class="project-slot"><p>Projeto 19</p></div>
+        <div class="project-slot"><p>Projeto 20</p></div>
+        <div class="project-slot"><p>Projeto 21</p></div>
+        <div class="project-slot"><p>Projeto 22</p></div>
+        <div class="project-slot"><p>Projeto 23</p></div>
+        <div class="project-slot"><p>Projeto 24</p></div>
+        <div class="project-slot"><p>Projeto 25</p></div>
+        <div class="project-slot"><p>Projeto 26</p></div>
+        <div class="project-slot"><p>Projeto 27</p></div>
+    </div>
+
+    <a href="index.html" class="back-button">Voltar para a Biblioteca</a>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Área ou Perímetro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Área ou Perímetro do Retângulo</h1>
+        <select id="operador">
+            <option value="Área">Área</option>
+            <option value="Perímetro">Perímetro</option>
+        </select>
+        <input type="number" id="base" placeholder="Digite a base">
+        <input type="number" id="altura" placeholder="Digite a altura">
+        <button onclick="calcular()">Calcular</button>
+        <div class="result" id="resultado"></div>
+        <a href="index.html" class="back-link">Voltar para Biblioteca</a>
+    </div>
+
+    <script src="calcularAouP.js"></script>
+</body>
+</html>
